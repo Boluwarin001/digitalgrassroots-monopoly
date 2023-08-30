@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Components</title>
 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alata&family=Grandstander:wght@100;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Alata&family=Grandstander:wght@100;700&family=Inter:wght@300;400&display=swap" rel="stylesheet"> -->
 
 
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
 	<link rel="stylesheet" type="text/css" href="board.css">
 	<link rel="stylesheet" type="text/css" href="game.css">
 
 	<!-- <script type="text/javascript" src="script.js"></script> -->
-	<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 
 
@@ -48,38 +48,35 @@
 	<div style="color:#fff;padding: 150px 200px;font-size: 30px;">Settings</div>
 </div>
 
-
+<!-- vignette -->
 <div class="vignette" id="vignette"></div>
 
+<!-- buttons -->
 <div class="game-btn toggle-settings" id="settingsTrigger" onclick="toggleSettings()"><img src="assets/settings-icon.png" style="width:30px;margin-top: 5px;"></div>
 
 <div class="game-btn toggle-3d" onclick="toggle3D()"><img src="assets/dice-outline.png" style="width:30px;margin-top: 5px;"></div>
 
-<div class="game-btn toggle-hand"><img src="assets/hand-icon.png" style="width:30px;margin-top: 5px;"></div>
+<div class="game-btn toggle-hand" onclick="rollDice()"><img src="assets/hand-icon.png" style="width:30px;margin-top: 5px;"></div>
 
+<!-- left right -->
 <div class="game-btn left-turn" id="rotateAnticlockwise">&#8249;</div>
 <div class="game-btn right-turn" id="rotateClockwise">&#8250;</div>
 
 
+<!-- dicey -->
+<div class="dice-back" id="diceDiv">
+	<div class="dice-shadow"></div>
+	<div class="dice-container"></div>
+</div>
 
+
+
+<!-- board -->
 <div class="table" id="table">
 
 	<div class="board" id="board">
-		<div class="center">
 
-<!-- 			<div class="community-chest-deck">
-				<h2 class="label">Community Chest</h2>
-				<div class="deck"></div>
-			</div> -->
-
-			<!-- <h1 class="title">MONOPOLY</h1> -->
-
-<!-- 			<div class="chance-deck">
-				<h2 class="label">Chance</h2>
-				<div class="deck"></div>
-			</div> -->
-
-		</div>
+		<div class="center"></div>
 
 		<div class="space corner go">
 			<div class="container">
@@ -390,3 +387,4 @@
 
 
 <script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="dice.js"></script>
